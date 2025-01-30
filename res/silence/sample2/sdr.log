@@ -1,0 +1,11 @@
+clearsep-onlypos:
+0548.wav, pos_query: 'Bow-wow, Bell', sdr=24.747, sisdr=24.538
+
+
+clearsep-pos+neg:
+0548.wav, pos_query: 'Bow-wow, Bell', neg_query: 'Stir, Frying (food), Vehicle, Car, Car passing by', sdr=137.241, sisdr=101.872
+
+
+clapsep-onlypos:
+0548.wav, pos_query: 'Bow-wow, Bell', sdr=3.351, sisdr=1.453
+
