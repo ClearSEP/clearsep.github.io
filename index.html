@@ -40,7 +40,8 @@
             <!-- Animated Title -->
             <h1 id="co-speech-modalities" class="title is-1 publication-title" style="font-family: 'Google Sans', sans-serif; font-weight: bold; line-height: 1.2; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">
               <span style="display: inline-block; transform: scale(1.05); animation: bounce 2s infinite;">ClearSep</span><br>
-              <span style="color: #ffe761;">Unleashing the Power of Natural Audio Featuring Multiple Sound Sources</span>
+              <span style="color: #ffe761;">Unleashing the Power of Natural Audio</span>
+              <span style="color: #ffe761;">Featuring Multiple Sound Sources</span>
             </h1>
             <!-- Subheading -->
             <!-- <p class="subtitle is-4 mt-4" style="font-family: 'Noto Sans', sans-serif; font-size: 1.5rem; line-height: 1.8; opacity: 0.9;">
@@ -713,55 +714,6 @@
                                 </td>
                               </tr>
                                  
-                              <!-- hidden rows -->
-                              <tr class="hidden-sample-data" style="display: none;">
-                                <td class="has-text-centered" width="200px">
-                                    <figure class="image is-16by9" width="200px">
-                                        <img src="res/data_engine/sample2/Y2wGkbHl3IUE_mel.png" class="has-ratio" alt="Mixture Spectrogram">
-                                    </figure>
-                                </td>
-                                <td class="has-text-centered" width="200px">
-                                    <figure class="image is-16by9" width="200px">
-                                        <img src="res/data_engine/sample2/Bagpipes_mel.png" class="has-ratio" alt="Class1 Spectrogram">
-                                    </figure>
-                                    <p class="has-text-grey">"Bagpipes"</p>
-                                </td>
-                                <td class="has-text-centered" width="200px">
-                                    <figure class="image is-16by9" width="200px">
-                                        <img src="res/data_engine/sample2/Wind%20instrument,%20woodwind%20instrument_mel.png" class="has-ratio" alt="Class2 Spectrogram">
-                                    </figure>
-                                    <p class="has-text-grey">"Wind instrument, woodwind instrument"</p>
-                                </td>
-                                <td class="has-text-centered" width="200px">
-                                    <figure class="image is-16by9" width="200px">
-                                        <img src="res/data_engine/sample2/Y2wGkbHl3IUE_68.93_mel.png" class="has-ratio" alt="Class3 Spectrogram">
-                                    </figure>
-                                    <p class="has-text-grey">"Re-SDR: 34.575 dB Re-SDRi: 34.354 dB"</p>
-                                </td>
-                              </tr>
-
-                              <tr class="hidden-sample-data" style="display: none;">
-                                <td class="has-text-centered" width="200px">
-                                    <audio controls class="audio-player" width="200px">
-                                        <source src="res/data_engine/sample2/Y2wGkbHl3IUE_68.93.wav" type="audio/wav">
-                                    </audio>
-                                </td>
-                                <td class="has-text-centered" width="200px">
-                                    <audio controls class="audio-player" width="200px">
-                                        <source src="res/data_engine/sample2/Bagpipes.wav" type="audio/wav">
-                                    </audio>
-                                </td>
-                                <td class="has-text-centered" width="200px">
-                                    <audio controls class="audio-player" width="200px">
-                                        <source src="res/data_engine/sample2/Wind%20instrument,%20woodwind%20instrument.wav" type="audio/wav">
-                                    </audio>
-                                </td>
-                                <td class="has-text-centered" width="200px">
-                                    <audio controls class="audio-player" width="200px">
-                                        <source src="res/data_engine/sample2/Y2wGkbHl3IUE_68.93.wav" type="audio/wav">
-                                    </audio>
-                                </td>
-                              </tr>
                           <tr class="hidden-sample-data" style="display: none;">
                                 <td class="has-text-centered" width="200px">
                                     <figure class="image is-16by9" width="200px">
@@ -957,137 +909,187 @@
                       <tbody>
                         <!-- display rows -->
                         <tr>
-                          <td class="has-text-centered is-vcentered" width="200px">
+                          <td rowspan="2" class="has-text-centered is-vcentered" width="200px">
+                              <div class="content" width="200px">
+                                <p class="is-italic">"Timpani"</p>
+                                <p class="is-italic has-text-danger">"（Not Exist in Audio.）"</p>
+                              </div>
+                          </td>
+                          <td class="has-text-centered" width="200px">
                               <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/query.png" class="has-ratio" alt="Query Spectrogram">
+                                  <img src="res/silence/sample1/YhGWarNR6xmg_Y9vZDsGjyh5M_mel.png" class="has-ratio" alt="Source Spectrogram">
                               </figure>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/mix_mel.png" class="has-ratio" alt="Source Spectrogram">
+                                  <img src="res/silence/sample1/1138-audiosep_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
                               </figure>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/gt_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
+                                  <img src="res/silence/sample1/1138-clapsep_pos_mel.png" class="has-ratio" alt="CLAPSEP(P) Spectrogram">
                               </figure>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/UMSS_mel.png" class="has-ratio" alt="CLAPSEP(P) Spectrogram">
+                                  <img src="res/silence/sample1/1138-clear_pos_mel.png" class="has-ratio" alt="ClearSEP(P) Spectrogram">
                               </figure>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/UMSS+aug_mel.png" class="has-ratio" alt="ClearSEP(P) Spectrogram">
-                              </figure>
-                          </td>
-                          <td class="has-text-centered" width="200px">
-                              <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/UMSS+aug_mel.png" class="has-ratio" alt="ClearSEP(P+N) Spectrogram">
+                                  <img src="res/silence/sample1/1138-clear_pos_neg_mel.png" class="has-ratio" alt="ClearSEP(P+N) Spectrogram">
                               </figure>
                           </td>
                         </tr>
 
                         <tr>
-                          <td class="has-text-centered is-vcentered" width="200px">
+                          <td class="has-text-centered" width="200px">
                               <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/mix.wav" type="audio/wav">
+                                  <source src="res/silence/sample1/YhGWarNR6xmg_Y9vZDsGjyh5M.wav" type="audio/wav">
                               </audio>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/mix.wav" type="audio/wav">
+                                  <source src="res/silence/sample1/1138-audiosep.wav" type="audio/wav">
                               </audio>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/gt.wav" type="audio/wav">
+                                  <source src="res/silence/sample1/1138-clapsep_pos.wav" type="audio/wav">
                               </audio>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/UMSS.wav" type="audio/wav">
-                              </audio>
-                          </td>
-                          <td class="has-text-centered" width="200px">
-                              <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/UMSS+aug.wav" type="audio/wav">
+                                  <source src="res/silence/sample1/1138-clear_pos.wav" type="audio/wav">
                               </audio>
                           </td>
                           <td class="has-text-centered">
                               <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/UMSS+aug.wav" type="audio/wav">
+                                  <source src="res/silence/sample1/1138-clear_pos_neg.wav" type="audio/wav">
                               </audio>
                           </td>
                         </tr>
 
-                        <!-- hidden rows -->
-                        <tr class="hidden-sample-silence" style="display: none;">
-                          <td class="has-text-centered is-vcentered" width="200px">
+                      <tr class="hidden-sample-silence" style="display: none;">
+                          <td rowspan="2" class="has-text-centered is-vcentered" width="200px">
+                              <div class="content" width="200px">
+                                  <p class="is-italic">"Bow-wow, Bell"</p>
+                              </div>
+                          </td>
+                          <td class="has-text-centered" width="200px">
                               <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/query.png" class="has-ratio" alt="Query Spectrogram">
+                                  <img src="res/silence/sample2/YxYwpABpZed4_Yg_P29ucKj78_mel.png" class="has-ratio" alt="Mixture Spectrogram">
                               </figure>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/mix_mel.png" class="has-ratio" alt="Source Spectrogram">
+                                  <img src="res/silence/sample2/0548-audiosep_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
                               </figure>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/gt_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
+                                  <img src="res/silence/sample2/0548-clapsep_pos_mel.png" class="has-ratio" alt="CLAPSEP(P) Spectrogram">
                               </figure>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/UMSS_mel.png" class="has-ratio" alt="CLAPSEP(P) Spectrogram">
+                                  <img src="res/silence/sample2/0548-clear_pos_mel.png" class="has-ratio" alt="ClearSEP(P) Spectrogram">
                               </figure>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/UMSS+aug_mel.png" class="has-ratio" alt="ClearSEP(P) Spectrogram">
+                                  <img src="res/silence/sample2/0548-clear_pos_neg_mel.png" class="has-ratio" alt="ClearSEP(P+N) Spectrogram">
                               </figure>
                           </td>
-                          <td class="has-text-centered" width="200px">
-                              <figure class="image is-16by9" width="200px">
-                                  <img src="res/query_aug/text_query/sample1/UMSS+aug_mel.png" class="has-ratio" alt="ClearSEP(P+N) Spectrogram">
-                              </figure>
-                          </td>
-                        </tr>
+                      </tr>
 
-                        <tr class="hidden-sample-silence" style="display: none;">
-                          <td class="has-text-centered is-vcentered" width="200px">
+                      <tr class="hidden-sample-silence" style="display: none;">
+                          <td class="has-text-centered" width="200px">
                               <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/mix.wav" type="audio/wav">
+                                  <source src="res/silence/sample2/YxYwpABpZed4_Yg_P29ucKj78.wav" type="audio/wav">
                               </audio>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/mix.wav" type="audio/wav">
+                                  <source src="res/silence/sample2/0548-audiosep.wav" type="audio/wav">
                               </audio>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/gt.wav" type="audio/wav">
+                                  <source src="res/silence/sample2/0548-clapsep_pos.wav" type="audio/wav">
                               </audio>
                           </td>
                           <td class="has-text-centered" width="200px">
                               <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/UMSS.wav" type="audio/wav">
-                              </audio>
-                          </td>
-                          <td class="has-text-centered" width="200px">
-                              <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/UMSS+aug.wav" type="audio/wav">
+                                  <source src="res/silence/sample2/0548-clear_pos.wav" type="audio/wav">
                               </audio>
                           </td>
                           <td class="has-text-centered">
                               <audio controls class="audio-player" width="200px">
-                                  <source src="res/query_aug/text_query/sample1/UMSS+aug.wav" type="audio/wav">
+                                  <source src="res/silence/sample2/0548-clear_pos_neg.wav" type="audio/wav">
                               </audio>
                           </td>
-                        </tr>
+                      </tr>
+                      <tr>
+                          <td rowspan="2" class="has-text-centered is-vcentered" width="200px">
+                              <div class="content" width="200px">
+                                  <p class="is-italic">"Rhythm and blues"</p>
+                              </div>
+                          </td>
+                          <td class="has-text-centered" width="200px">
+                              <figure class="image is-16by9" width="200px">
+                                  <img src="res/silence/sample3/YYQSuFyFm3Lc_YrjUrB1WUpcI_mel.png" class="has-ratio" alt="Mixture Spectrogram">
+                              </figure>
+                          </td>
+                          <td class="has-text-centered" width="200px">
+                              <figure class="image is-16by9" width="200px">
+                                  <img src="res/silence/sample3/0018-audiosep_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
+                              </figure>
+                          </td>
+                          <td class="has-text-centered" width="200px">
+                              <figure class="image is-16by9" width="200px">
+                                  <img src="res/silence/sample3/0018-clapsep_pos_mel.png" class="has-ratio" alt="CLAPSEP(P) Spectrogram">
+                              </figure>
+                          </td>
+                          <td class="has-text-centered" width="200px">
+                              <figure class="image is-16by9" width="200px">
+                                  <img src="res/silence/sample3/0018-clear_pos_mel.png" class="has-ratio" alt="ClearSEP(P) Spectrogram">
+                              </figure>
+                          </td>
+                          <td class="has-text-centered" width="200px">
+                              <figure class="image is-16by9" width="200px">
+                                  <img src="res/silence/sample3/0018-clear_pos_neg_mel.png" class="has-ratio" alt="ClearSEP(P+N) Spectrogram">
+                              </figure>
+                          </td>
+                      </tr>
+
+                      <tr class="hidden-sample-silence" style="display: none;">
+                          <td class="has-text-centered is-vcentered" width="200px">
+                              <audio controls class="audio-player" width="200px">
+                                  <source src="res/silence/sample3/YYQSuFyFm3Lc_YrjUrB1WUpcI.wav" type="audio/wav">
+                              </audio>
+                          </td>
+                          <td class="has-text-centered" width="200px">
+                              <audio controls class="audio-player" width="200px">
+                                  <source src="res/silence/sample3/0018-audiosep.wav" type="audio/wav">
+                              </audio>
+                          </td>
+                          <td class="has-text-centered" width="200px">
+                              <audio controls class="audio-player" width="200px">
+                                  <source src="res/silence/sample3/0018-clapsep_pos.wav" type="audio/wav">
+                              </audio>
+                          </td>
+                          <td class="has-text-centered" width="200px">
+                              <audio controls class="audio-player" width="200px">
+                                  <source src="res/silence/sample3/0018-clear_pos.wav" type="audio/wav">
+                              </audio>
+                          </td>
+                          <td class="has-text-centered" width="200px">
+                              <audio controls class="audio-player" width="200px">
+                                  <source src="res/silence/sample3/0018-clear_pos_neg.wav" type="audio/wav">
+                              </audio>
+                          </td>
+                      </tr>
                       </tbody>
                   </table>
                   <div class="has-text-centered mt-5">
