@@ -39,8 +39,8 @@
           <div class="column has-text-centered">
             <!-- Animated Title -->
             <h1 id="co-speech-modalities" class="title is-1 publication-title" style="font-family: 'Google Sans', sans-serif; font-weight: bold; line-height: 1.2; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">
-              <span style="display: inline-block; transform: scale(1.05); animation: bounce 2s infinite;">ClearSEP</span><br>
-              <span style="color: #ffe761;">Unleashing the Power of Authentically Mixed Audio Tracks</span>
+              <span style="display: inline-block; transform: scale(1.05); animation: bounce 2s infinite;">ClearSep</span><br>
+              <span style="color: #ffe761;">Unleashing the Power of Natural Audio Featuring Multiple Sound Sources</span>
             </h1>
             <!-- Subheading -->
             <!-- <p class="subtitle is-4 mt-4" style="font-family: 'Noto Sans', sans-serif; font-size: 1.5rem; line-height: 1.8; opacity: 0.9;">
@@ -66,8 +66,7 @@
           </h2>
           <div class="content has-text-justified" style="font-size: 1.2rem; line-height: 1.8;">
             <p>
-              Universal sound separation aims to disentangle mixed audio into clean tracks corresponding to distinct events, which holds significant importance for artificial intelligence auditory perception. However, existing works face several challenges in training sound separation models: (1) It is difficult to annotate large-scale audio data with fine-grained labels, limiting the effective alignment between queries and audio tracks. (2) Audio often contains multiple mixed tracks, making it challenging to align events with their corresponding tracks. This paper introduces a practical sound separation model, ClearSound, designed to unlock the potential of large-scale mixed-track data for robust sound separation. Specifically, we investigate the strengths and limitations of using labels versus captions as queries for sound separation. We propose a label-centric self-labeling process for unlabeled/mixed-track data, which expands the clean-track audio data available for sound separation to 78M tracks. Furthermore, we present a Silence-Aug strategy that enhances the purity of separated tracks. Experiments across multiple datasets demonstrate that our model achieves state-of-the-art sound separation performance. The detailed experimental results are presented in 
-              <a href="https://clearsound.github.io" target="_blank" style="color: #3273dc;">https://clearsound.github.io</a>.
+              Universal sound separation aims to extract clean audio tracks corresponding to distinct events from mixed audio, which is critical for artificial auditory perception. However, current methods heavily rely on artificially mixed audio for training, which limits their ability to generalize to naturally mixed audio collected in real-world environments. To overcome this limitation, we propose \textbf{ClearSep}, an innovative framework that employs a data engine to decompose complex naturally mixed audio into multiple independent tracks, thereby allowing effective sound separation in real-world scenarios. We introduce two remix-based evaluation metrics to quantitatively assess separation quality and use these metrics as thresholds to iteratively apply the data engine alongside model training, progressively optimizing separation performance. In addition, we propose a series of training strategies tailored to these separated independent tracks to make the best use of them. Extensive experiments demonstrate that ClearSep achieves state-of-the-art performance across multiple sound separation tasks, highlighting its potential for advancing sound separation in natural audio scenarios.
             </p>
           </div>
         </div>
@@ -618,6 +617,7 @@
                                   </audio>
                               </td>
                             </tr>
+                            
                           </tbody>
                       </table>
                       <div class="has-text-centered mt-5">
@@ -759,6 +759,152 @@
                                 <td class="has-text-centered" width="200px">
                                     <audio controls class="audio-player" width="200px">
                                         <source src="res/data_engine/sample2/Y2wGkbHl3IUE_68.93.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                              </tr>
+                          <tr class="hidden-sample-data" style="display: none;">
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample3/Y4P5JASGZeu8_mel.png" class="has-ratio" alt="Mixture Spectrogram">
+                                    </figure>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample3/Speech_mel.png" class="has-ratio" alt="Class1 Spectrogram">
+                                    </figure>
+                                    <p class="has-text-grey">"Speech"</p>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample3/Maraca_mel.png" class="has-ratio" alt="Class2 Spectrogram">
+                                    </figure>
+                                    <p class="has-text-grey">"Maraca"</p>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample3/Y4P5JASGZeu8_67.19_mel.png" class="has-ratio" alt="Class3 Spectrogram">
+                                    </figure>
+                                    <p class="has-text-grey">"Re-SDR: 33.691 dB Re-SDRi: 33.499 dB"</p>
+                                </td>
+                              </tr>
+
+                              <tr class="hidden-sample-data" style="display: none;">
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample3/Y4P5JASGZeu8.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample3/Speech.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample3/Maraca.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample3/Y4P5JASGZeu8_67.19.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                              </tr>
+
+                              <tr class="hidden-sample-data" style="display: none;">
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample4/Y55HtMNsjUY8_mel.png" class="has-ratio" alt="Mixture Spectrogram">
+                                    </figure>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample4/Speech_mel.png" class="has-ratio" alt="Class1 Spectrogram">
+                                    </figure>
+                                    <p class="has-text-grey">"Speech"</p>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample4/Single-lens reflex camera_mel.png" class="has-ratio" alt="Class2 Spectrogram">
+                                    </figure>
+                                    <p class="has-text-grey">"Single-lens reflex camera"</p>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample4/Y55HtMNsjUY8_84.85_mel.png" class="has-ratio" alt="Class3 Spectrogram">
+                                    </figure>
+                                    <p class="has-text-grey">"Re-SDR: 42.460 dB Re-SDRi: 42.386 dB"</p>
+                                </td>
+                              </tr>
+
+                              <tr class="hidden-sample-data" style="display: none;">
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample4/Y55HtMNsjUY8.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample4/Speech.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample4/Single-lens reflex camera.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample4/Y55HtMNsjUY8_84.85.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                              </tr>
+
+                              <tr class="hidden-sample-data" style="display: none;">
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample5/YAEsAzMOCiy0_mel.png" class="has-ratio" alt="Mixture Spectrogram">
+                                    </figure>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample5/Speech_mel.png" class="has-ratio" alt="Class1 Spectrogram">
+                                    </figure>
+                                    <p class="has-text-grey">"Speech"</p>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample5/Rustling leaves_mel.png" class="has-ratio" alt="Class2 Spectrogram">
+                                    </figure>
+                                    <p class="has-text-grey">"Rustling leaves"</p>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <figure class="image is-16by9" width="200px">
+                                        <img src="res/data_engine/sample5/YAEsAzMOCiy0_70.16_mel.png" class="has-ratio" alt="Class3 Spectrogram">
+                                    </figure>
+                                    <p class="has-text-grey">"Re-SDR: 35.144 dB Re-SDRi: 35.019 dB"</p>
+                                </td>
+                              </tr>
+
+                              <tr class="hidden-sample-data" style="display: none;">
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample5/YAEsAzMOCiy0.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample5/Speech.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample5/Rustling leaves.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="has-text-centered" width="200px">
+                                    <audio controls class="audio-player" width="200px">
+                                        <source src="res/data_engine/sample5/YAEsAzMOCiy0_70.16.wav" type="audio/wav">
                                     </audio>
                                 </td>
                               </tr>
