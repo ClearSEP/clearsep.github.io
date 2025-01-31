@@ -1,0 +1,18 @@
+clearsep-onlypos
+0018.wav, pos_query: 'Rhythm and blues', sdr=44.954, sisdr=44.435
+
+
+clearsep-pos+neg
+0018.wav, pos_query: 'Rhythm and blues', neg_query: 'Railroad car, train wagon, Train horn, Rail transport, Train, Gurgling', sdr=139.334, sisdr=104.117
+
+
+clapsep-onlypos
+0018.wav, pos_query: 'Rhythm and blues', sdr=9.024, sisdr=0.954
+
+
+clapsep-pos+neg
+0018.wav, pos_query: 'Rhythm and blues', neg_query: 'Railroad car, train wagon, Train horn, Rail transport, Train, Gurgling', sdr=7.341, sisdr=1.872
+
+
+audiosep
+0018.wav, pos_query: 'Rhythm and blues', sdr=15.067, sisdr=14.249
