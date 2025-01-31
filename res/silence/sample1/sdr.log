@@ -9,3 +9,11 @@ clearsep-pos+neg:
 clapsep-onlypos:
 1138.wav, pos_query: 'Timpani', sdr=8.414, sisdr=6.191
 
+
+clapsep-pos+neg:
+1138.wav, pos_query: 'Timpani', neg_query: 'Steam, Hiss, Truck, Vehicle, Car', sdr=8.465, sisdr=5.771
+
+
+audiosep:
+1138.wav, pos_query: 'Timpani', sdr=15.684, sisdr=8.040
+
