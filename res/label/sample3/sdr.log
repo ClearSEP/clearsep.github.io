@@ -1,0 +1,8 @@
+sample id: 1472
+pos query: Hiss
+neg query: Speech,Sewing machine
+audiosep: sdr=-1.172, sisdr=-7.267
+clapsep pos: sdr=-8.945, sisdr=-9.839
+clapsep pos+neg: sdr=-3.564, sisdr=-3.819
+clearsep pos: sdr=0.406, sisdr=0.338
+clearsep pos+neg: sdr=8.294, sisdr=7.451

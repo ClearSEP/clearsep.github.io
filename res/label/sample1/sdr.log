@@ -1,0 +1,8 @@
+sample id: 0359
+pos query: Door
+neg query: Beep,bleep,Speech
+audiosep: sdr=12.4, sisdr=12.32
+clapsep pos: sdr=7.161, sisdr=6.562
+clapsep pos+neg: sdr=11.803, sisdr=11.174
+clearsep pos: sdr=21.526, sisdr=21.466
+clearsep pos+neg: sdr=21.739, sisdr=21.673

@@ -1,0 +1,8 @@
+sample id: 1789
+pos query: Idling,Truck,Vehicle
+neg query: Domestic animals,pets,Bow-wow,Dog,Animal
+audiosep: sdr=13.778, sisdr=13.753
+clapsep pos: sdr=22.087, sisdr=22.074
+clapsep pos+neg: sdr=26.478, sisdr=26.418
+clearsep pos: sdr=49.047, sisdr=48.921
+clearsep pos+neg: sdr=49.315, sisdr=49.183

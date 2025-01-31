@@ -1,0 +1,8 @@
+sample id: 0466
+pos query: Croak,Frog
+neg query: Tick-tock,Speech
+audiosep: sdr=0.854, sisdr=-3.485
+clapsep pos: sdr=-12.049, sisdr=-16.779
+clapsep pos+neg: sdr=2.623, sisdr=1.281
+clearsep pos: sdr=11.083, sisdr=10.995
+clearsep pos+neg: sdr=11.189, sisdr=11.108
