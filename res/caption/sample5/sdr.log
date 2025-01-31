@@ -1,0 +1,8 @@
+sample id: 1701
+pos query: A male speaking and a saw running
+neg query: A man talking while bongos play followed by frogs croaking
+audiosep: sdr=5.239, sisdr=3.747
+clapsep pos: sdr=-9.748, sisdr=-11.978
+clapsep pos+neg: sdr=-8.424, sisdr=-10.457
+clearsep pos: sdr=11.755, sisdr=11.55
+clearsep pos+neg: sdr=12.053, sisdr=11.837

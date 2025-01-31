@@ -1,0 +1,8 @@
+sample id: 0267
+pos query: Some rustling followed by a quick powerful hiss
+neg query: Outside noises of insects buzzing around,birds communicating and a man exchanging information with another man
+audiosep: sdr=10.796, sisdr=10.721
+clapsep pos: sdr=10.264, sisdr=9.634
+clapsep pos+neg: sdr=10.456, sisdr=9.869
+clearsep pos: sdr=19.078, sisdr=17.649
+clearsep pos+neg: sdr=20.712, sisdr=19.551

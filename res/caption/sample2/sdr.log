@@ -1,0 +1,8 @@
+sample id: 0473
+pos query: A rooster clucking followed by a dog whimpering then a man talking and a dog barking
+neg query: A loud burst followed by laughter
+audiosep: sdr=6.27, sisdr=5.127
+clapsep pos: sdr=7.568, sisdr=7.323
+clapsep pos+neg: sdr=6.306, sisdr=5.587
+clearsep pos: sdr=14.26, sisdr=14.153
+clearsep pos+neg: sdr=14.58, sisdr=14.318

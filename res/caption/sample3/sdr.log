@@ -1,0 +1,8 @@
+sample id: 0679
+pos query: There is a mature male talking to some animals
+neg query: A man and a woman laughing then talking followed by someone claps as a bell jingles repeatedly
+audiosep: sdr=13.189, sisdr=13.106
+clapsep pos: sdr=13.885, sisdr=11.094
+clapsep pos+neg: sdr=14.521, sisdr=11.509
+clearsep pos: sdr=22.087, sisdr=21.988
+clearsep pos+neg: sdr=22.231, sisdr=22.122
