@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Umss">
-  <meta property="og:title" content="OmniSEP: Unified Omni-modal Sound Separation"/>
+  <meta property="og:title" content="Unleashing the Power of Natural Audio Featuring Multiple Sound Sources"/>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">    
   
   <title>ClearSEP</title>
@@ -1668,6 +1668,259 @@
                     </button>
                   </div>
                 </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+
+    <section class="hero is-light">
+      <div class="hero-body">
+          <div class="container">
+          <div class="box mb-6">
+            <h1 id="Filter" class="title is-3 has-text-centered mb-4">
+              <span class="icon-text">
+                <span>Filtered results with different metric</span>
+              </span>
+            </h1>
+              <br>
+              <h4 id="clap-score" class="title is-4 mb-4">
+                  <span class="icon-text">
+                      <span class="icon">
+                          <i class="fas fa-tags"></i>
+                      </span>
+                      <span>Samples incorrectly passed by the CLAP score filter but strictly filtered out by the remix-based filter.</span>
+                  </span>
+              </h4>
+              <div class="table-container">
+                  <table class="table is-bordered is-fullwidth is-hoverable">
+                      <thead class="has-background-success-light">
+                          <tr>
+                              <th class="has-text-centered">Mixture</th>
+                              <th class="has-text-centered">Class1</th>
+                              <th class="has-text-centered">Class2</th>
+                              <th class="has-text-centered">More Details</th>
+                          </tr>
+                      </thead>
+
+                      <tbody>
+                          <!-- display rows -->
+                          <tr>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_clap/Y1kjnqM-ptrk/Y1kjnqM-ptrk_mel.png" class="has-ratio" alt="Source Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"youtube id:1kjnqM-ptrk"</p>
+                              </td>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_clap/Y1kjnqM-ptrk/Speech_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"class: Speech"</p>
+                              </td>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_clap/Y1kjnqM-ptrk/Shatter_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"class: Shatter"</p>
+                              </td>
+
+                              <td rowspan="2"  class="has-text-centered" width="200px">
+                                  <div class="content" width="200px">
+                                      <p class="is-italic">"Re-SDRi:7.912"</p>
+                                      <p class="is-italic">"Re-SISDRi:6.499"</p>
+                                      <p class="is-italic">"Failure Type (CLAP score): Ineffectiveness in handling partial mismatches"</p>
+                                  </div>
+                              </td>
+                          </tr>
+
+                          <tr>
+                            <td class="has-text-centered is-vcentered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                  <source src="res/filter_clap/Y1kjnqM-ptrk/Y1kjnqM-ptrk.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td class="has-text-centered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                    <source src="res/filter_clap/Y1kjnqM-ptrk/Speech.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td class="has-text-centered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                    <source src="res/filter_clap/Y1kjnqM-ptrk/Shatter.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                          </tr>
+
+                          <!-- display rows -->
+                          <tr>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_clap/YzyGjrJfE_rg/YzyGjrJfE_rg_mel.png" class="has-ratio" alt="Source Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"youtube id:zyGjrJfE_rg"</p>
+                              </td>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_clap/YzyGjrJfE_rg/Speech_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"class: Speech"</p>
+                              </td>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_clap/YzyGjrJfE_rg/Silence_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"class: Silence"</p>
+                              </td>
+
+                              <td rowspan="2"  class="has-text-centered" width="200px">
+                                  <div class="content" width="200px">
+                                      <p class="is-italic">"Re-SDRi:14.177"</p>
+                                      <p class="is-italic">"Re-SISDRi:13.411"</p>
+                                      <p class="is-italic">"Failure Type (CLAP score): Lack of generalization on low-resource categories"</p>
+                                  </div>
+                              </td>
+                          </tr>
+
+                          <tr>
+                            <td class="has-text-centered is-vcentered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                  <source src="res/filter_clap/YzyGjrJfE_rg/YzyGjrJfE_rg.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td class="has-text-centered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                    <source src="res/filter_clap/YzyGjrJfE_rg/Speech.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td class="has-text-centered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                    <source src="res/filter_clap/YzyGjrJfE_rg/Silence.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
+<!--              </div>-->
+              <br>
+              <h4 id="remix-score" class="title is-4 mb-4">
+                  <span class="icon-text">
+                      <span class="icon">
+                          <i class="fas fa-tags"></i>
+                      </span>
+                      <span>Low-resource category samples mistakenly filtered out by the CLAP score filter.</span>
+                  </span>
+              </h4>
+<!--              <div class="table-container">-->
+                  <table class="table is-bordered is-fullwidth is-hoverable">
+                      <thead class="has-background-success-light">
+                          <tr>
+                              <th class="has-text-centered">Mixture</th>
+                              <th class="has-text-centered">Class1</th>
+                              <th class="has-text-centered">Class2</th>
+                              <th class="has-text-centered">More Details</th>
+                          </tr>
+                      </thead>
+
+                      <tbody>
+                          <!-- display rows -->
+                          <tr>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_resdr/Yq-532qrgyUA/Yq-532qrgyUA_mel.png" class="has-ratio" alt="Source Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"youtube id:Yq-532qrgyUA"</p>
+                              </td>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_resdr/Yq-532qrgyUA/Speech_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"class: Speech"</p>
+                              </td>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_resdr/Yq-532qrgyUA/Groan_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"class: Groan"</p>
+                              </td>
+
+                              <td rowspan="2"  class="has-text-centered" width="200px">
+                                  <div class="content" width="200px">
+                                      <p class="is-italic">"Re-SDRi:36.447"</p>
+                                      <p class="is-italic">"Re-SISDRi:36.307"</p>
+                                      <p class="is-italic">"Failure Type (CLAP score): Lack of generalization on low-resource categories"</p>
+                                  </div>
+                              </td>
+                          </tr>
+
+                          <tr>
+                            <td class="has-text-centered is-vcentered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                  <source src="res/filter_resdr/Yq-532qrgyUA/Yq-532qrgyUA.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td class="has-text-centered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                    <source src="res/filter_resdr/Yq-532qrgyUA/Speech.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td class="has-text-centered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                    <source src="res/filter_resdr/Yq-532qrgyUA/Groan.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                          </tr>
+
+                          <!-- display rows -->
+                          <tr>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_resdr/Yi8YLqEPooik/Yi8YLqEPooik_mel.png" class="has-ratio" alt="Source Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"youtube id:zyGjrJfE_rg"</p>
+                              </td>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_resdr/Yi8YLqEPooik/Speech_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"class: Speech"</p>
+                              </td>
+                              <td class="has-text-centered" width="200px">
+                                  <figure class="image is-16by9" width="200px">
+                                      <img src="res/filter_resdr/Yi8YLqEPooik/Buzzer_mel.png" class="has-ratio" alt="AudioSEP Spectrogram">
+                                  </figure>
+                                  <p class="is-italic">"class: Buzzer"</p>
+                              </td>
+
+                              <td rowspan="2"  class="has-text-centered" width="200px">
+                                  <div class="content" width="200px">
+                                      <p class="is-italic">"Re-SDRi:41.094"</p>
+                                      <p class="is-italic">"Re-SISDRi:40.560"</p>
+                                      <p class="is-italic">"Failure Type (CLAP score): Lack of generalization on low-resource categories"</p>
+                                  </div>
+                              </td>
+                          </tr>
+
+                          <tr>
+                            <td class="has-text-centered is-vcentered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                  <source src="res/filter_resdr/Yi8YLqEPooik/Yi8YLqEPooik.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td class="has-text-centered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                    <source src="res/filter_resdr/Yi8YLqEPooik/Speech.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td class="has-text-centered" width="200px">
+                                <audio controls class="audio-player" width="200px">
+                                    <source src="res/filter_resdr/Yi8YLqEPooik/Buzzer.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                          </tr>
+                      </tbody>
+                  </table>
               </div>
           </div>
       </div>
